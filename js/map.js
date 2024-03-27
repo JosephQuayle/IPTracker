@@ -49,7 +49,7 @@ function ipData() {
 
       //get marker icon
       let mapMarker = L.icon({
-        iconUrl: "../images/icon-location.svg",
+        iconUrl: "images/icon-location.svg",
         iconSize: [46, 56],
         //icon anchor first number should always be iconSize width divided by 2
         iconAnchor: [23, 56],
