@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+    <title>IP Tracker</title>
+  </head>
+  <body>
+    <div class="container">
+      <section class="search">
+        <h1>IP Address Tracker</h1>
+        <div class="form">
+          <input id="userInput" type="text" />
+          <button onclick="ipData()">
+            <img src="./images/icon-arrow.svg" alt="" srcset="" />
+          </button>
+        </div>
+        <div class="info">
+          <div class="ip">
+            <p class="heading">IP ADDRESS</p>
+            <h2 class="info-text" id="ipAdd">192.212.174.101</h2>
+          </div>
+          <div class="line"></div>
+          <div class="location">
+            <p class="heading">LOCATION</p>
+            <h2 class="info-text" id="locationData">Brooklyn, NY 10001</h2>
+          </div>
+          <div class="line"></div>
+          <div class="timezone">
+            <p class="heading">TIMEZONE</p>
+            <h2 class="info-text" id="timeData">UTC-05:00</h2>
+          </div>
+          <div class="line"></div>
+          <div class="isp">
+            <p class="heading">ISP</p>
+            <h2 class="info-text" id="ispData">SpaceX Starlink</h2>
+          </div>
+        </div>
+      </section>
+      <section id="map"></section>
+    </div>
+    <script src="./js/map.js"></script>
+  </body>
+</html>
